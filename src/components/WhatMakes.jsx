@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function WhatMakes() {
   return (
-    <section className="w-full bg-[#0e1746] py-16 lg:py-24">
+    <section className="w-full py-16 lg:py-24">
       <div className="w-[90%] md:w-[85%] max-w-[1600px] mx-auto">
         {/* Heading */}
         <h2 className="text-[25px] md:text-[30px] font-[300] text-white leading-tight mb-10">
@@ -15,7 +15,8 @@ export default function WhatMakes() {
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Card 1 */}
-          <div className="rounded-[16px] bg-[#0f2057] pt-24 pb-6 px-6 flex flex-col items-center border border-white">
+          <div className="rounded-[16px] bg-[rgb(15_32_87_/_45%)] pt-24 pb-6 px-6 flex flex-col items-center">
+
             <Image
               src="/images/unified.png"
               alt="Unified Dashboard"
@@ -35,7 +36,8 @@ export default function WhatMakes() {
           </div>
 
           {/* Card 2 */}
-         <div className="rounded-[16px] bg-[#0f2057] pt-24 pb-6 px-6 flex flex-col items-center border border-white">
+         <div className="rounded-[16px] bg-[rgb(15_32_87_/_45%)] pt-24 pb-6 px-6 flex flex-col items-center">
+
             <Image
               src="/images/ybw.png"
               alt="Your Business Workflow"
@@ -55,7 +57,8 @@ export default function WhatMakes() {
           </div>
 
           {/* Card 3 */}
-         <div className="rounded-[16px] bg-[#0f2057] pt-24 pb-6 px-6 flex flex-col items-center border border-white">
+         <div className="rounded-[16px] bg-[rgb(15_32_87_/_45%)] pt-24 pb-6 px-6 flex flex-col items-center">
+
             <Image
               src="/images/FI.png"
               alt="Financial Intelligence"

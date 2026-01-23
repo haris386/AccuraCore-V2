@@ -54,7 +54,7 @@ export default function EverythingYouNeedSection() {
   };
 
   return (
-    <section style={{ paddingBottom: 0, backgroundColor: "#f4f0ed" }}>
+    <section style={{ paddingBottom: 0 }}>
       <div className="w-full">
         <div
           className="p-8 lg:p-12"

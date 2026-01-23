@@ -7,7 +7,6 @@ export default function HeroSection() {
   return (
     <section
       className="w-full bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/images/hero-bg.png')" }}
     >
       <Header />
       <div className="w-[90%] md:w-[85%] max-w-[1600px] mx-auto py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

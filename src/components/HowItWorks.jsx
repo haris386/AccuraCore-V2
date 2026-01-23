@@ -5,8 +5,8 @@ import Image from 'next/image';
 export default function HowItWorks() {
   return (
     <section
-      className="w-full bg-cover bg-center bg-no-repeat py-16 lg:py-24"
-      style={{ backgroundImage: "url('/images/hero-bg.png')" }}
+      className="w-full py-16 lg:py-24"
+      
     >
       <div className="w-[90%] md:w-[65%] max-w-[1600px] mx-auto flex flex-col gap-12">
         {/* Heading */}
