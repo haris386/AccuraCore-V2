@@ -1,6 +1,7 @@
 import EverythingYouNeedSection from '@/components/EverythingYouNeedSection';
 import HeroSection from '@/components/HeroSection';
 import HowItWorks from '@/components/HowItWorks';
+import Intelligence from '@/components/Intelligence';
 import WhatMakes from '@/components/WhatMakes';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <HowItWorks />
       <EverythingYouNeedSection />
       <WhatMakes />
+      <Intelligence />
     </>
   );
 }
