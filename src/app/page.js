@@ -1,3 +1,4 @@
+import Contact from '@/components/Contact';
 import EverythingYouNeedSection from '@/components/EverythingYouNeedSection';
 import FAQs from '@/components/FAQs';
 import Footer from '@/components/Footer';
@@ -21,6 +22,7 @@ export default function Home() {
       <Plans />
       <Organized />
       <FAQs />
+      <Contact />
       <Footer />
     </>
   );
