@@ -3,7 +3,7 @@ import "./globals.css";
 
 const sora = Sora({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["100", "200", "300", "400", "500", "700"],
 });
 
 const outfit = Outfit({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "700"] });
