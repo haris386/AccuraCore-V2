@@ -7,7 +7,7 @@ import HowItWorks from '@/components/HowItWorks';
 import Intelligence from '@/components/Intelligence';
 import Organized from '@/components/Organized';
 import Plans from '@/components/Plans';
-import SlideShow from '@/components/slideshow';
+import SlideShow from '@/components/SlideShow';
 import WhatMakes from '@/components/WhatMakes';
 
 export default function Home() {
