@@ -55,12 +55,12 @@ export default function EverythingYouNeedSection() {
 
   return (
     <section className="w-full bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/section 03.png')", paddingBottom:0 }}>
+      style={{ backgroundImage: "url('/images/Section03.png')", paddingBottom:0 }}>
       <div className="w-full">
         <div
           className="p-8 lg:p-12"
           style={{
-            background: "radial-gradient(circle, #2f5071 0%, #162c44 100%)",
+            
             paddingLeft: 0,
             paddingRight: 0,
           }}
@@ -75,17 +75,17 @@ export default function EverythingYouNeedSection() {
           </div>
 
           {/* Tab Buttons */}
-          <div className="flex flex-wrap justify-center gap-3 lg:gap-4 mb-8 lg:mb-12 px-4 lg:px-12">
+          <div className="flex flex-wrap justify-center gap-3 lg:gap-4 mb-8 mt-8 lg:mb-12 px-4 lg:px-12">
             {tabs.map((tab) => (
               <div
                 key={tab.id}
                 className="rounded-full"
                 style={{
                   padding: activeTab === tab.id ? "1.5px" : "0px",
-                  background:
-                    activeTab === tab.id
-                      ? "linear-gradient(90deg, #98CDFA 0.48%, #ECECEC 23.08%, #1161A5 59.13%, #1161A5 95.65%)"
-                      : "transparent",
+                 background:
+  activeTab === tab.id
+    ? "linear-gradient(90deg, #000000 0%, #98CDFA 15%, #ECECEC 35%, #1161A5 65%, #1161A5 85%, #000000 100%)"
+    : "transparent",
                   borderRadius: "999px",
                 }}
               >
