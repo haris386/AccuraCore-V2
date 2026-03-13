@@ -54,7 +54,8 @@ export default function EverythingYouNeedSection() {
   };
 
   return (
-    <section style={{ paddingBottom: 0 }}>
+    <section className="w-full bg-cover bg-center"
+      style={{ backgroundImage: "url('/images/section 03.png')", paddingBottom:0 }}>
       <div className="w-full">
         <div
           className="p-8 lg:p-12"

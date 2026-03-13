@@ -5,7 +5,8 @@ import Image from 'next/image';
 export default function HowItWorks() {
   return (
     <section
-      className="w-full py-16 lg:py-24"
+      className="w-full py-16 lg:py-24 bg-cover bg-center"
+      style={{ backgroundImage: "url('/images/section2.jpg')" }}
       
     >
       <div className="w-[90%] md:w-[65%] max-w-[1600px] mx-auto flex flex-col gap-12">

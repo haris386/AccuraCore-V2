@@ -4,7 +4,8 @@ import Image from "next/image";
 
 export default function WhatMakes() {
   return (
-    <section className="w-full py-16 lg:py-24">
+    <section className="w-full py-16 lg:py-24 bg-cover bg-center"
+      style={{ backgroundImage: "url('/images/section04.png')" }}>
       <div className="w-[90%] md:w-[85%] max-w-[1600px] mx-auto">
         {/* Heading */}
         <h2 className="text-[25px] md:text-[30px] font-[300] text-white leading-tight mb-10">

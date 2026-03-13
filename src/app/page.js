@@ -19,11 +19,11 @@ export default function Home() {
       <EverythingYouNeedSection />
       <WhatMakes />
       <Intelligence />
-      <SlideShow />
-      <Plans />
+      {/* <SlideShow /> */}
+      {/* <Plans /> */}
       <Organized />
       <FAQs />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </>

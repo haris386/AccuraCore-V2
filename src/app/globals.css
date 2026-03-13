@@ -89,13 +89,13 @@ a {
   * {
     @apply border-border;
   }
-  body {
+  /* body {
     @apply bg-background text-foreground;
     background-image: url("/images/FPbg.jpg");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-  }
+  } */
 }
 
 button{
