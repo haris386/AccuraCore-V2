@@ -71,7 +71,7 @@ export default function FAQs() {
                 border: "1px solid rgb(41 58 95)",
                 background: isOpen ? "#0061A4" : "#021849",
                 borderRadius: isOpen ? "15px" : "100px",
-                zIndex: faqsData.length - index, // to maintain overlay effect
+                zIndex: faqsData.length - index,
               }}
             >
               {/* QUESTION ROW */}

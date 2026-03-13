@@ -57,7 +57,7 @@ export default function SlideShow() {
             return (
               <div
                 key={index}
-                className={`relative p-6 rounded-b-[50px] transition-all duration-500 ${
+                className={`relative p-6 rounded-b-[30px] transition-all duration-500 ${
                   isActive
                     ? "bg-[linear-gradient(180deg,rgba(246,190,113,0.2)_0%,rgba(246,190,113,0.2)_100%)]"
                     : "bg-transparent"

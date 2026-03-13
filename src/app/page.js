@@ -8,6 +8,7 @@ import Intelligence from '@/components/Intelligence';
 import Organized from '@/components/Organized';
 import Plans from '@/components/Plans';
 import SlideShow from '@/components/SlideShow';
+import Testimonials from '@/components/Testimonials';
 import WhatMakes from '@/components/WhatMakes';
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <Plans />
       <Organized />
       <FAQs />
+      <Testimonials />
       <Contact />
       <Footer />
     </>
