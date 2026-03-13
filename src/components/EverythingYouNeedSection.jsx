@@ -7,25 +7,25 @@ import useEmblaCarousel from "embla-carousel-react";
 const allImages = [
   {
     id: "Work-Order-Management",
-    src: "/Images/Work-Order-Management.png",
+    src: "/images/Work-Order-Management.png",
     alt: "Work Order Management",
   },
   {
     id: "smart-dashboard",
-    src: "/Images/Smart-Dashboard.png",
+    src: "/images/Smart-Dashboard.png",
     alt: "Smart Dashboard",
   },
   {
     id: "boards",
-    src: "/Images/Boards.png",
+    src: "/images/Boards.png",
     alt: "Boards",
   },
   {
     id: "Contact-Profiles",
-    src: "/Images/Contact-Profiles.png",
+    src: "/images/Contact-Profiles.png",
     alt: "Contact Profiles Section",
   },
-  { id: "calendar", src: "/Images/Calendar.png", alt: "Calendar View" },
+  { id: "calendar", src: "/images/Calendar.png", alt: "Calendar View" },
 ];
 
 // Define tabs, linking to the central image ID
