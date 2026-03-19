@@ -111,7 +111,7 @@ export default function Intelligence() {
     <>
       <section
         className="w-full bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/section05.jpg')" }}
+        style={{ backgroundImage: "url('/images/Section04.png')" }}
       >
         <section className="w-full py-16 lg:py-24" >
           <div className="w-[90%] md:w-[85%] max-w-[1600px] mx-auto relative z-10">
