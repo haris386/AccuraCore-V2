@@ -65,7 +65,7 @@ export default function FAQs() {
   return (
     <section
       className="w-full py-16 lg:py-24 bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/section5.jpg')" }}
+      style={{ backgroundImage: "url('/images/section05.jpg')" }}
     >
       {/* FAQS */}
       <div className="text-center mb-12">
