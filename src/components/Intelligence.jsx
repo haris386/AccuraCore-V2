@@ -122,7 +122,7 @@ export default function Intelligence() {
               <span className="text-[#FA8C3D]">Powers Smarter Operations</span>
             </h2>
             {/* Intelligence image */}
-            <div className="relative w-full mx-auto h-[400px] md:h-[600px]">
+            <div className="relative w-full mx-auto md:h-[600px]">
               <img
                 src="/images/Intelligence.png"
                 alt="Intelligence"
@@ -133,7 +133,7 @@ export default function Intelligence() {
         </section>
 
         {/* SlideShow */}
-        <section className="w-full py-20 flex justify-center">
+        <section className="w-full pt-0 pb-[5rem] flex justify-center">
           <div className="w-[90%] md:w-[80%]">
             {/* IMAGE */}
             <div className="relative w-full mb-10 rounded-[15px] overflow-hidden h-[250px] md:h-[500px]">
