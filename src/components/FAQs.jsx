@@ -79,7 +79,6 @@ export default function FAQs() {
         {/* Top Gradient Overlay for first 2 questions */}
         <div className="absolute top-0 left-0 w-full h-40 pointer-events-none bg-gradient-to-b from-[#000233] to-transparent z-10"></div>
 
-        {/* Bottom Gradient Overlay for last 2 questions */}
         {/* Bottom Gradient Overlay */}
         <div
           className="absolute bottom-0 left-0 w-full h-20 pointer-events-none z-10"
@@ -130,14 +129,12 @@ export default function FAQs() {
                   maxHeight: isOpen ? "500px" : "0px",
                 }}
               >
-                {isOpen && (
-                  <div className="pt-2 pb-4">
-                    <div className="w-full h-[1px] bg-white/30 mb-2"></div>
-                    <p className="text-white font-[200] text-sm leading-relaxed">
-                      {faq.answer}
-                    </p>
-                  </div>
-                )}
+                <div className="pt-2 pb-4">
+                  <div className="w-full h-[1px] bg-white/30 mb-2"></div>
+                  <p className="text-white font-[200] text-sm leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
               </div>
             </div>
           );
@@ -177,19 +174,25 @@ export default function FAQs() {
 
           {/* RIGHT CONTENT */}
           <div className="flex flex-col text-white w-full md:w-[55%]">
-            {/* NAME + STARS */}
-            <div className="flex justify-between items-center mb-3">
-              <h4 className="font-[400] text-[16px]">
-                {testimonials[active].name}
-              </h4>
-
-              <div className="flex gap-1 text-[#F6BE71]">★★★★★</div>
-            </div>
-
             {/* FEEDBACK */}
-            <p className="text-sm md:text-[15px] font-[300] leading-relaxed text-white/90">
-              {testimonials[active].feedback}
-            </p>
+            <div className="relative w-full">
+              {testimonials.map((t, i) => (
+                <div
+                  key={i}
+                  className={`absolute top-0 left-0 w-full transition-opacity duration-500 ${
+                    active === i ? "opacity-100 relative" : "opacity-0"
+                  }`}
+                >
+                  <div className="flex justify-between items-center mb-3">
+                    <h4 className="font-[400] text-[16px] mb-2">{t.name}</h4>
+                    <div className="flex gap-1 text-[#F6BE71]">★★★★★</div>
+                  </div>
+                  <p className="text-sm md:text-[15px] font-[300] leading-relaxed text-white/90">
+                    {t.feedback}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
