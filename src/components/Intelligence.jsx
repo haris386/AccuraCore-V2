@@ -138,6 +138,7 @@ export default function Intelligence() {
             {/* IMAGE */}
             <div className="w-full mb-10 rounded-[15px] overflow-hidden transition-all duration-700">
              <img
+             key={slides[active].image}
   src={slides[active].image}
   alt="slide"
   className="w-full h-auto object-cover transition-all duration-700"
