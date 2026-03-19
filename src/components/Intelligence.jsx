@@ -111,9 +111,9 @@ export default function Intelligence() {
     <>
       <section
         className="w-full bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/Section04.png')" }}
+        style={{ backgroundImage: "url('/images/section5.jpg')" }}
       >
-        <section className="w-full py-16 lg:py-24" >
+        <section className="w-full py-16 lg:py-24">
           <div className="w-[90%] md:w-[85%] max-w-[1600px] mx-auto relative z-10">
             {/* Heading */}
             <h2 className="text-[25px] md:text-[30px] font-[300] text-white leading-tight mb-10 relative z-20">
