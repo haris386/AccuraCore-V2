@@ -121,15 +121,12 @@ export default function Intelligence() {
               <br />
               <span className="text-[#FA8C3D]">Powers Smarter Operations</span>
             </h2>
-
+            {/* Intelligence image */}
             <div className="relative w-full mx-auto h-[400px] md:h-[600px]">
-              {/* Background Image */}
-              <Image
+              <img
                 src="/images/Intelligence.png"
                 alt="Intelligence"
-                fill
                 className="opacity-50"
-                priority
               />
             </div>
           </div>
@@ -140,13 +137,11 @@ export default function Intelligence() {
           <div className="w-[90%] md:w-[80%]">
             {/* IMAGE */}
             <div className="w-full mb-10 rounded-[15px] overflow-hidden transition-all duration-700">
-              <Image
-                src={slides[active].image}
-                alt="slide"
-                width={1400}
-                height={700}
-                className="w-full h-auto object-cover transition-all duration-700"
-              />
+             <img
+  src={slides[active].image}
+  alt="slide"
+  className="w-full h-auto object-cover transition-all duration-700"
+/>
             </div>
 
             {/* CONTENT COLS */}
