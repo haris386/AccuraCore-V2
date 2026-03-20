@@ -64,7 +64,7 @@ export default function FAQs() {
 
   return (
    <section
-  className="w-full py-16 lg:py-24 bg-cover bg-center will-change-transform"
+  className="w-full py-16 bg-cover bg-center will-change-transform"
   style={{
     backgroundImage: "url('/images/section6.jpg')",
     transform: "translateZ(0)"
