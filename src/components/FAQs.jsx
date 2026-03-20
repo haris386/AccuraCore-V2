@@ -80,7 +80,7 @@ export default function FAQs() {
 
       <div className="w-[90%] md:w-[60%] mx-auto flex flex-col gap-4 relative">
         {/* Top Gradient Overlay for first 2 questions */}
-        <div className="absolute top-0 left-0 w-full h-40 pointer-events-none bg-gradient-to-b from-[#000233] to-transparent z-10"></div>
+        <div className="w-full transition-opacity duration-500 h-40 pointer-events-none bg-gradient-to-b from-[#000233] to-transparent z-10"></div>
 
         {/* Bottom Gradient Overlay */}
         <div
@@ -96,7 +96,7 @@ export default function FAQs() {
           return (
             <div
               key={index}
-              className={`relative transition-all duration-500 border overflow-hidden`}
+              className="relative transition-all duration-500 border"
               style={{
                 border: "1px solid rgb(41 58 95)",
                 background: isOpen ? "#0061A4" : "#021849",
@@ -126,11 +126,11 @@ export default function FAQs() {
               </button>
 
               {/* ANSWER */}
-              <div
-               className={`px-6 transition-all duration-500 ${
-  isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-}`}
-              >
+            <div
+  className={`px-6 transition-all duration-500 ${
+    isOpen ? "opacity-100" : "opacity-0 hidden"
+  }`}
+>
                 <div className="pt-2 pb-4">
                   <div className="w-full h-[1px] bg-white/30 mb-2"></div>
                   <p className="text-white font-[200] text-sm leading-relaxed">
@@ -182,7 +182,7 @@ export default function FAQs() {
                 <div
                   key={i}
                   className={`absolute top-0 left-0 w-full transition-opacity duration-500 ${
-                    active === i ? "opacity-100 relative" : "opacity-0"
+                    active === i ? "opacity-100" : "opacity-0 hidden"
                   }`}
                 >
                   <div className="flex justify-between items-center mb-3">
