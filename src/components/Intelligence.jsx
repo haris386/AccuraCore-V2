@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import SlideShow from "./SlideShow";
 
 const slides = [
   {
@@ -133,61 +134,7 @@ export default function Intelligence() {
         </section>
 
         {/* SlideShow */}
-        <section className="w-full pt-0 pb-[5rem] flex justify-center">
-          <div className="w-[90%] md:w-[80%]">
-            {/* IMAGE */}
-            <div className="relative w-full mb-10 rounded-[15px] overflow-hidden h-[250px] md:h-[500px]">
-
-  {slides.map((slide, index) => (
-    <img
-      key={index}
-      src={slide.image}
-      alt="slide"
-      className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-700 ${
-        index === active ? "opacity-100 z-10" : "opacity-0 z-0"
-      }`}
-    />
-  ))}
-
-</div>
-
-            {/* CONTENT COLS */}
-            <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
-              {slides.map((slide, index) => {
-                const isActive = index === active;
-
-                return (
-                  <div
-                    key={index}
-                    className={`relative p-6 rounded-b-[30px] transition-all duration-500 ${
-                      isActive
-                        ? "bg-[linear-gradient(180deg,rgba(246,190,113,0.2)_0%,rgba(246,190,113,0.2)_100%)]"
-                        : "bg-transparent"
-                    }`}
-                  >
-                    {/* PROGRESS BAR */}
-                    <div className="absolute top-0 left-0 w-full h-[4px] bg-gray-200 rounded-xl overflow-hidden">
-                      {isActive && (
-                        <div className="h-full bg-[#F6BE71] animate-progress"></div>
-                      )}
-                    </div>
-
-                    <h3
-                      className="text-lg md:text-xl font-[400] mb-3 transition-colors duration-500"
-                      style={{ color: isActive ? "#F6BE71" : "#FFFFFF" }}
-                    >
-                      {slide.title}
-                    </h3>
-
-                    <p className="text-sm text-[#FFFFFF] leading-relaxed">
-                      {slide.description}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
+        <SlideShow />
 
         {/* Plans Cards */}
         <section className="w-full pt-8 pb-24 lg:py-24">
