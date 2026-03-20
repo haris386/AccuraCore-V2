@@ -101,7 +101,7 @@ export default function FAQs() {
                 border: "1px solid rgb(41 58 95)",
                 background: isOpen ? "#0061A4" : "#021849",
                 borderRadius: isOpen ? "15px" : "100px",
-                zIndex: faqsData.length - index,
+                zIndex: 1
               }}
             >
               {/* QUESTION ROW */}
@@ -127,10 +127,9 @@ export default function FAQs() {
 
               {/* ANSWER */}
               <div
-                className="px-6 overflow-hidden transition-[max-height] duration-500"
-                style={{
-                  maxHeight: isOpen ? "500px" : "0px",
-                }}
+               className={`px-6 transition-all duration-500 ${
+  isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+}`}
               >
                 <div className="pt-2 pb-4">
                   <div className="w-full h-[1px] bg-white/30 mb-2"></div>
