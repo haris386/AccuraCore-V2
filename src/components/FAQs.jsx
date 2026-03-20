@@ -182,7 +182,7 @@ export default function FAQs() {
                 <div
                   key={i}
                   className={`absolute top-0 left-0 w-full transition-opacity duration-500 ${
-                    active === i ? "opacity-100" : "opacity-0 hidden"
+                    active === i ? "opacity-100 relative" : "opacity-0"
                   }`}
                 >
                   <div className="flex justify-between items-center mb-3">
