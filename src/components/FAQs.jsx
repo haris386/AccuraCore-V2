@@ -63,10 +63,13 @@ export default function FAQs() {
   };
 
   return (
-    <section
-      className="w-full py-16 lg:py-24 bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/section6.jpg')" }}
-    >
+   <section
+  className="w-full py-16 lg:py-24 bg-cover bg-center will-change-transform"
+  style={{
+    backgroundImage: "url('/images/section6.jpg')",
+    transform: "translateZ(0)"
+  }}
+>
       {/* FAQS */}
       <div className="text-center mb-12">
         <h2 className="text-white text-[25px] md:text-[30px] font-[300] leading-tight mb-10">
