@@ -80,7 +80,7 @@ export default function FAQs() {
 
       <div className="w-[90%] md:w-[60%] mx-auto flex flex-col gap-4 relative">
         {/* Top Gradient Overlay for first 2 questions */}
-        <div className="w-full transition-opacity duration-500 h-40 pointer-events-none bg-gradient-to-b from-[#000233] to-transparent z-10"></div>
+        <div className="absolute top-0 left-0 w-full h-40 pointer-events-none bg-gradient-to-b from-[#000233] to-transparent z-10"></div>
 
         {/* Bottom Gradient Overlay */}
         <div
